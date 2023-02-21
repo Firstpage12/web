@@ -18,16 +18,7 @@ exports.validateUserSignUp = [
       .withMessage('Password is empty!')
       .isLength({ min: 8, max: 20 })
       .withMessage('Password must be 3 to 20 characters long!'),
-    // check('confirmPassword')
-    //   .trim()
-    //   .not()
-    //   .isEmpty()
-    //   .custom((value, { req }) => {
-    //     if (value !== req.body.password) {
-    //       throw new Error('Both password must be same!');
-    //     }
-    //     return true;
-    //   }),
+    
   ];
 
 exports.userValidation =(req,res,next)=>{
